@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Let's Get Started</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
+    <style>
+        *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        ffont-family: 'Manrope', sans-serif;
+        }
+        .Background
+        {
+            background: linear-gradient(45deg, #1f253e, #313a61);
+            width:100%;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .StartBtnDiv
+        
+        {
+            background: transparent;
+            
+            
+        }
+        
+        .StartBTN
+        {
+            color:black;
+            background-color:white;
+            border:none;
+            border-radius:25px;
+            margin:20px;
+            
+        }
+        button
+        {
+            font-size:70px;
+            box-shadow: 0px 5px 15px #ffffff;
+            cursor: pointer;
+            transition-duration:1s;
+        }
+        button:hover {
+            box-shadow: 0 0px 16px 0 #ffffff,0 0px 50px 0 #ffffff;
+            }
+            
+            #animation {
+            
+            margin:auto;
+            background: linear-gradient(0deg, #ff7e15, #15cbff);
+            width:0px;
+            height:0px;
+            border-radius:15px;
+            transition-duration:1s;
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            box-shadow: 0px 0px 10px #1c4c53;
+            }
+            
+            #link{
+            
+            
+                color: white;
+                text-decoration: none;
+                
+                padding:0px;
+                border-radius:25px;
+                text-align: centre;
+                
+                font-size:0px;
+                cursor: pointer;
+                transition-duration:1.3s;
+            }
+            #link:hover {
+            box-shadow: 0 0px 16px 0 #ffffff,0 0px 50px 0 #ff892b;
+            }
+            
+            #link2{
+            
+            
+                color: white;
+                text-decoration: none;
+                
+                padding:0px;
+                border-radius:25px;
+                text-align: centre;
+                
+                font-size:0px;
+                cursor: pointer;
+                transition-duration:1.3s;
+            }
+            #link2:hover {
+            box-shadow: 0 0px 16px 0 #ffffff,0 0px 50px 0 #ff892b;
+            }
+            
+            
+    </style>
+</head>
+<body>
+    
+    <div class="Background">
+        
+        <div class="StartBtnDiv">
+            
+            <div id="animation">
+            <a href="MyCalculator.html" id="link" class="link">Calculator</a>
+            <br>
+            <a href="SnakeGame.html" id="link2" class="link">Play Game</a>
+        </div>
+        
+            <button id="StartBTN" class="StartBTN" onclick="animation()">Let's Start</button>
+            
+        </div>
+        
+    </div>
+    
+    <script>
+       
+            
+            function animation () {
+                const Adiv = document.getElementById("animation");
+                const link= document.getElementById("link");
+                const link2= document.getElementById("link2");
+                const button= document.getElementById("StartBTN");
+            
+      Adiv.style.width = "300px"; 
+      Adiv.style.height = "300px";
+      Adiv.style.background="linear-gradient(0deg, #ffffff, #aadfff)";
+      
+      link.style.fontSize= "40px";
+      link.style.padding= "20px";
+      link.style.background= "#ff9d00";
+      
+      link2.style.fontSize= "40px";
+      link2.style.padding= "20px";
+      link2.style.background= "#8515ff";
+      
+      
+    }
+    </script>
+</body>
+</html>
