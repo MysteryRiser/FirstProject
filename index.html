@@ -23,11 +23,11 @@
             justify-content:center;
             align-items:center;
         }
+        
         .StartBtnDiv
         
         {
             background: transparent;
-            
             
         }
         
@@ -99,7 +99,23 @@
                 transition-duration:1.3s;
             }
             #link2:hover {
-            box-shadow: 0 0px 16px 0 #ffffff,0 0px 50px 0 #ff892b;
+            box-shadow: 0 0px 16px 0 #ffffff,0 0px 50px 0 #8515ff;
+            }
+            
+            #link3{
+                color: white;
+                text-decoration: none;
+                
+                padding:0px;
+                border-radius:25px;
+                text-align: centre;
+                
+                font-size:0px;
+                cursor: pointer;
+                transition-duration:1.3s;
+            }
+            #link3:hover {
+            box-shadow: 0 0px 16px 0 #80eaff,0 0px 20px 0 #000c7b;
             }
             
             
@@ -115,6 +131,8 @@
             <a href="MyCalculator.html" id="link" class="link">Calculator</a>
             <br>
             <a href="SnakeGame.html" id="link2" class="link">Play Game</a>
+            <br>
+            <a href="WeatherApp.html" id="link3" class="link">Check Weather</a>
         </div>
         
             <button id="StartBTN" class="StartBTN" onclick="animation()">Let's Start</button>
@@ -130,10 +148,11 @@
                 const Adiv = document.getElementById("animation");
                 const link= document.getElementById("link");
                 const link2= document.getElementById("link2");
+                const link3= document.getElementById("link3");
                 const button= document.getElementById("StartBTN");
             
-      Adiv.style.width = "300px"; 
-      Adiv.style.height = "300px";
+      Adiv.style.width = "320px"; 
+      Adiv.style.height = "400px";
       Adiv.style.background="linear-gradient(0deg, #ffffff, #aadfff)";
       
       link.style.fontSize= "40px";
@@ -144,6 +163,9 @@
       link2.style.padding= "20px";
       link2.style.background= "#8515ff";
       
+      link3.style.fontSize= "40px";
+      link3.style.padding= "20px";
+      link3.style.background= "linear-gradient(0deg, #000000, #000c7b)";
       
     }
     </script>
